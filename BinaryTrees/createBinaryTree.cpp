@@ -54,6 +54,7 @@ void InOrderTraversal (node* root) {
         return;
     }
 
+    // LNR
     InOrderTraversal(root->left);
     cout << root->data << " ";
     InOrderTraversal(root->right);
@@ -64,6 +65,7 @@ void PreOrderTraversal (node* root) {
         return;
     }
 
+    // NLR
     cout << root->data << " ";
     PreOrderTraversal(root->left);
     PreOrderTraversal(root->right);
@@ -74,6 +76,7 @@ void PostOrderTraversal (node* root) {
         return;
     }
 
+    // LRN
     PostOrderTraversal(root->left);
     PostOrderTraversal(root->right);
     cout << root->data << " ";
